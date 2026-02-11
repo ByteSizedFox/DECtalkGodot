@@ -1,0 +1,43 @@
+[configuration]
+entry_symbol = "dectalk_mini_library_init"
+compatibility_minimum = "4.5"
+
+[libraries]
+linux.editor.x86_64 = "res://addons/dectalk_mini/bin/libdectalk_mini.linux.editor.x86_64.so"
+linux.debug.x86_64 = "res://addons/dectalk_mini/bin/libdectalk_mini.linux.template_debug.x86_64.so"
+linux.release.x86_64 = "res://addons/dectalk_mini/bin/libdectalk_mini.linux.template_release.x86_64.so"
+windows.editor.x86_64 = "res://addons/dectalk_mini/bin/libdectalk_mini.windows.editor.x86_64.dll"
+windows.debug.x86_64 = "res://addons/dectalk_mini/bin/libdectalk_mini.windows.template_debug.x86_64.dll"
+windows.release.x86_64 = "res://addons/dectalk_mini/bin/libdectalk_mini.windows.template_release.x86_64.dll"
+
+[dependencies]
+linux.editor.x86_64 = {
+  "res://addons/dectalk_mini/bin/libdtc.so": ""
+}
+linux.debug.x86_64 = {
+  "res://addons/dectalk_mini/bin/libdtc.so": ""
+}
+linux.release.x86_64 = {
+  "res://addons/dectalk_mini/bin/libdtc.so": ""
+}
+windows.editor.x86_64 = {
+  "res://addons/dectalk_mini/bin/dtc.dll": "",
+  "res://addons/dectalk_mini/bin/libdtc.dll": "",
+  "res://addons/dectalk_mini/bin/libgcc_s_seh-1.dll": "",
+  "res://addons/dectalk_mini/bin/libstdc++-6.dll": "",
+  "res://addons/dectalk_mini/bin/libwinpthread-1.dll": ""
+}
+windows.debug.x86_64 = {
+  "res://addons/dectalk_mini/bin/dtc.dll": "",
+  "res://addons/dectalk_mini/bin/libdtc.dll": "",
+  "res://addons/dectalk_mini/bin/libgcc_s_seh-1.dll": "",
+  "res://addons/dectalk_mini/bin/libstdc++-6.dll": "",
+  "res://addons/dectalk_mini/bin/libwinpthread-1.dll": ""
+}
+windows.release.x86_64 = {
+  "res://addons/dectalk_mini/bin/dtc.dll": "",
+  "res://addons/dectalk_mini/bin/libdtc.dll": "",
+  "res://addons/dectalk_mini/bin/libgcc_s_seh-1.dll": "",
+  "res://addons/dectalk_mini/bin/libstdc++-6.dll": "",
+  "res://addons/dectalk_mini/bin/libwinpthread-1.dll": ""
+}

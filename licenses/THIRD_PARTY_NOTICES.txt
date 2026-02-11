@@ -1,0 +1,23 @@
+Third-party notices for DECtalk Mini addon
+
+1) GCC runtime libraries (MinGW)
+   Files:
+	 - libstdc++-6.dll
+	 - libgcc_s_seh-1.dll
+   License: GPL-3.0-only with GCC Runtime Library Exception 3.1
+   License texts:
+	 - https://www.gnu.org/licenses/gpl-3.0.txt
+	 - https://www.gnu.org/licenses/gcc-exception-3.1.en.html
+   Source:
+	 - https://gcc.gnu.org/
+
+2) winpthreads (MinGW)
+   File:
+	 - libwinpthread-1.dll
+   License: MIT AND BSD-3-Clause-Clear (mingw-w64 winpthreads)
+   License texts:
+	 - https://spdx.org/licenses/MIT.html
+	 - https://spdx.org/licenses/BSD-3-Clause-Clear.html
+   Source:
+	 - https://sourceforge.net/p/mingw-w64/mingw-w64/ci/master/tree/mingw-w64-libraries/winpthreads/
+	 - https://packages.msys2.org/package/mingw-w64-x86_64-winpthreads

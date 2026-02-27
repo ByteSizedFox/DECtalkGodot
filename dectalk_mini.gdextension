@@ -1,5 +1,5 @@
 [configuration]
-entry_symbol = "DECtalkMini_library_init"
+entry_symbol = "dectalk_mini_library_init"
 compatibility_minimum = "4.5"
 
 [libraries]

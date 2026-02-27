@@ -51,3 +51,23 @@ Notes:
 
 Licenses:
 - See `addons/dectalk_mini/licenses/THIRD_PARTY_NOTICES.txt`.
+
+usage example:
+```
+extends Node2D
+
+var dectalk = DECtalkMini.new()
+
+func _callback(iwave, length, phoneme) -> void:
+	print(iwave) # waveform comes out here in 6.4ms callback chunks
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	dectalk.init(_callback)
+	dectalk.start("Hello World", DECtalkMini.WAVE_FORMAT_1M16)
+	dectalk.sync() # force audio out here
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+```
